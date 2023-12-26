@@ -123,7 +123,7 @@ header nav ul {
 }
 
 header nav{
-  width: 60%;
+  /* width: 60%; */
  margin: 0 auto;
 }
 
@@ -188,18 +188,26 @@ aside{
 
 /* ---------------About Page----------------------- */
 
-.mission{
+.mission-content{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-.contact-section{
-  display: flex;
-  justify-content: center;
+.mission-content p{
+
+  width: 45% ;
+
+}
+.contact-section .content-wrapper h2{
+  width: 80%;
 }
 
-.contact-content p{
-  margin: 0;
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 /* ----------FAQ PAGE-------------- */
@@ -210,13 +218,20 @@ aside{
 }
 
 .faq h2{
+  width: 100%;
   margin: 40px;
 }
 
 .faq-content{
   margin-bottom: 50px;
+  flex-basis: 45% ;
 }
 
+
+.faq .content-wrapper{
+
+  justify-content: space-between;
+}
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
@@ -355,9 +370,21 @@ footer .social-icons p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablets style */
 }
+
+
+@media only screen and (min-width: 1200px){
+ /* Desktop screen styles */
+}
+  
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
