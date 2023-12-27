@@ -86,6 +86,58 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  /* General Styles */
+ 
+html {
+	font-size: 1rem;
+}
+ 
+body {
+ font-family: 'open sans', sans-serif;
+ font-size: 1em;
+ text-align: left;
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+	color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+ font-family: 'poppins' , sans-serif;
+ font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'poppins' , sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+ 
+p {
+	font-size: .875em;
+  line-height: 1.285;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+}
+
+
 
    .content-wrapper{
     width: 90%;
@@ -123,14 +175,14 @@ header nav ul {
 }
 
 header nav{
-  /* width: 60%; */
+  width: 60%;
  margin: 0 auto;
 }
 
 /* img */
 
 img{
-  width: 60%;
+  /* width: 60%; */
   /* margin-left:60px; */
 
 }
@@ -188,19 +240,30 @@ aside{
 
 /* ---------------About Page----------------------- */
 
-.mission-content{
+.mission{
+  display: flex;
+  justify-content: center;
+}
+
+/* .mission-content{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+} */
+
+.contact-section{
+  display: flex;
+  justify-content: center;
 }
 
-.mission-content p{
 
-  width: 45% ;
-
+.contact-content p{
+  margin: 0;
 }
-.contact-section .content-wrapper h2{
+
+
+/* .contact-section .content-wrapper h2{
   width: 80%;
 }
 
@@ -208,7 +271,7 @@ aside{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 /* ----------FAQ PAGE-------------- */
 
@@ -218,20 +281,16 @@ aside{
 }
 
 .faq h2{
-  width: 100%;
-  margin: 40px;
+
+  margin-bottom: 40px;
 }
 
 .faq-content{
   margin-bottom: 50px;
-  flex-basis: 45% ;
+  
 }
 
 
-.faq .content-wrapper{
-
-  justify-content: space-between;
-}
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
@@ -281,6 +340,10 @@ footer .social-icons p{
 
 }
 
+
+footer .copyright {
+  margin: 20px 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -372,11 +435,195 @@ footer .social-icons p{
 
 @media only screen and (min-width: 768px) {
   /* Tablets style */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+
+
+   /* Aside */
+   aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+/* Features */
+.features article {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+.features .features-item-description {
+  width: 62%;
+}
+
+/* Reviews */
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews article div {
+  width: 49%;
+}
+
+/* Footer */
+footer .content-wrapper {
+  width: 65%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+/* ==========================================================================
+ About Page
+ ========================================================================== */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ==========================================================================
+ FAQ Page
+ ========================================================================== */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+  
+
+
 }
 
 
 @media only screen and (min-width: 1200px){
- /* Desktop screen styles */
+ /* desktop styles here */
+ 
+ .content-wrapper{
+  max-width: 960px;
+ }
+
+ header{
+  padding: 15px 0;
+ }
+
+.hero-area h1{
+  width: 80%;
+}
+
+aside .content-wrapper{
+  justify-content: space-around;
+
+}
+
+aside .content-wrapper .form{
+  width: 30%;
+}
+
+.features h2{
+  width: 90%;
+}
+
+
+.features article{
+flex-basis: 33%;
+}
+
+.reviews article div{
+  width: 42%;
+
+}
+
+
+/* --------about page------- */
+
+
+.mission h2 .contact-section 
+.content-wrapper h2{
+width: 95%;
+}
+
+/* -----------FAQ -------------*/
+.faq h2{
+  width: 100%;
+}
+
+
+
+
+
+
 }
   
 
