@@ -604,14 +604,25 @@ footer .content-wrapper {
   width: 65%;
 }
 
-.footer-content {
+ footer.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer .contact {
   margin-bottom: 0;
+}
+
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.285;
 }
 
 footer .copyright {
@@ -643,6 +654,10 @@ footer .copyright {
   align-items: flex-start;
 }
 
+.map-container figure{
+ padding-bottom: 35.5%;
+}
+
 /* ==========================================================================
  FAQ Page
  ========================================================================== */
@@ -660,6 +675,11 @@ footer .copyright {
   width: 100%;
 }
 
+.faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
   
 
 
@@ -677,17 +697,43 @@ footer .copyright {
   padding: 15px 0;
  }
 
+ h2{
+  font-size: 2.25em ;
+ }
+
+ h3,h4{
+  font-size: 1.875em;
+ }
+
+ p{
+  font-size:1.125em ;
+  line-height: 1.333;
+ }
+
 .hero-area h1{
   width: 80%;
+  font-size: 3.75em;
 }
+
+
+/* -----Aside------ */
 
 aside .content-wrapper{
   justify-content: space-around;
 
 }
 
-aside .content-wrapper .form{
-  width: 30%;
+aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+/* aside .content-wrapper .form{
+  width: 30%; */
 }
 
 .features h2{
@@ -699,11 +745,21 @@ aside .content-wrapper .form{
 flex-basis: 33%;
 }
 
+/* reviews */
+
 .reviews article div{
   width: 42%;
 
 }
 
+
+.reviews h2{
+  padding-bottom: 50px;
+}
+
+footer h4 {
+  font-size: 1.875em;
+}
 
 /* --------about page------- */
 
@@ -711,14 +767,22 @@ flex-basis: 33%;
 .mission h2 .contact-section 
 .content-wrapper h2{
 width: 95%;
+font-size: 3em;
 }
-
+.map-container figure {
+  padding-bottom: 37.5%;
+}
 /* -----------FAQ -------------*/
 .faq h2{
   width: 100%;
+  font-size: 3em;
 }
 
-
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
+}
 
 
 
