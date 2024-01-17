@@ -833,6 +833,7 @@ height: 70%; */
 
  .reviews article{
  text-align: center;
+ margin-bottom: 20px;
  }
  
  .reviews article h3{
@@ -841,7 +842,7 @@ height: 70%; */
 
  .reviews article p {
   margin-top: 10px;
- }
+ } 
 
 /* Footer Section for Desktop */
 
