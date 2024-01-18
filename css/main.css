@@ -283,7 +283,7 @@ aside{
 }
 
 .reviews h3{
-  width: 57%;
+  width:57%;
   margin: 20px 0;
 }
 
@@ -635,7 +635,7 @@ input[type=button] {
 /* Reviews */
 .reviews article {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .reviews article div {
@@ -831,8 +831,11 @@ font-size: 3em;
 /* width: 65%px;
 height: 70%; */
 
+.reviews h3{
+  width: 80%;
+}
  .reviews article{
- text-align: center;
+ text-align: left;
  margin-bottom: 20px;
  }
  
